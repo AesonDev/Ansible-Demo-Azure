@@ -1,0 +1,6 @@
+[all]
+localhost ansible_connection=local
+
+[all:vars]
+az_location=easteurope
+az_vnet_net=demovnet
