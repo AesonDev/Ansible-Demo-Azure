@@ -1,0 +1,6 @@
+---
+# tasks file for azuregroup
+- name: Azure resource group {{ group_name }}
+  azure_rm_resourcegroup:
+    name: "{{ group_name }}"
+    location: "{{ azure_location }}"

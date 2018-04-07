@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  connection: local
+  vars:
+    az_location: westeurope
+  roles:
+    - { role: azuregroup, 
+           group_name: testgroup01,
+           azure_location: "{{ az_location  }}"           
+      }
+      
+    - {  
+        role: azuregroup,
+           group_name: testgroup02,
+           azure_location: "{{ az_location  }}"
+      }
